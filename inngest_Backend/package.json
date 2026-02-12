@@ -1,0 +1,20 @@
+{
+  "name": "inngest",
+  "version": "1.0.0",
+  "main": "function.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1",
+    "inngest": "^3.51.0"
+  },
+  "devDependencies": {
+    "inngest-cli": "^1.16.1"
+  }
+}

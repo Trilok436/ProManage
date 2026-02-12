@@ -1,0 +1,20 @@
+# Node
+node_modules/
+*/node_modules/
+
+dist/
+build/
+
+.env
+.env.local
+
+# Spring Boot
+target/
+*.jar
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
