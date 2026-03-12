@@ -6,7 +6,7 @@ export default inngest.createFunction(
   async ({ event }) => {
     const { title, email } = event.data;
 
-    await fetch("http://10.66.43.133:8080/api/mail/invite", {
+    await fetch("https://promanage-backend-lkfv.onrender.com/api/mail/invite", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, workspaceId: 0 }),
