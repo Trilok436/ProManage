@@ -37,7 +37,7 @@ public class WorkspaceInviteController {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
-        Map<String, Object> payload = Map.of(
+        Map<String, Object> event = Map.of(
                 "name", "workspace/invite",
                 "data", Map.of(
                         "inviteId", invitation.getId(),
@@ -45,8 +45,8 @@ public class WorkspaceInviteController {
                         "workspaceId", id
                 )
         );
-
-        HttpEntity<Map<String, Object>> request = new HttpEntity<>(payload, headers);
+        List<Map<String, Object>> payload = List.of(event);
+        HttpEntity<List<Map<String, Object>>> request = new HttpEntity<>(payload, headers);
     try {
         restTemplate.postForObject(inngestUrl, request, String.class);
         System.out.println("Event sent to inngest local");
