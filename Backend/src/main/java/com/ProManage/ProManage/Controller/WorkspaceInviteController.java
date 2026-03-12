@@ -32,7 +32,7 @@ public class WorkspaceInviteController {
         );
 
         // 🔥 Call Inngest here with invitation.getId()
-        String inngestUrl = "https://inn.gs/e/IwpSLvKW4JKzRnJ9HC6ZVS4kGbYlizhWt_YVe2zqJHSQZwRunhb0anEesny4lHFZLuwGydjfPF84-Q-M3OLshA";
+        String inngestUrl = "https://inn.gs/e/YVyA6r6SlJHN3TENxNhFNMQzTRWrX5pntb7n6xKqbcmetVOwW0EOawoymaw1SiWxOqW0RhYcHJnmtdmF2DeOrQ";
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
