@@ -8,7 +8,7 @@ import workspaceInviteEmail from "./workspaceInviteEmail.js";
 const app = express();
 app.use(express.json());
 app.use(
-  "/api/inngest",
+  "https://pro-manage-inngest.vercel.app/api/inngest",
   serve({
     client: inngest,
     functions: [taskEmail, workspaceInviteEmail], // ✅ BOTH
