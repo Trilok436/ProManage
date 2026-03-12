@@ -5,9 +5,9 @@ export default inngest.createFunction(
   { event: "workspace/invite" },
   async ({ event }) => {
     const { email, workspaceId, inviteId } = event.data;
-    const joinLink = `http://localhost:5173/join/${inviteId}`;
+    const joinLink = `https://pro-manage-frontend-liard.vercel.app/join/${inviteId}`;
     console.log("Workspace invite email sent:", joinLink);
-    const response = await fetch("http://localhost:8080/api/mail/invite", {
+    const response = await fetch("https://promanage-backend-lkfv.onrender.com/api/mail/invite", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, workspaceId, joinLink }),
